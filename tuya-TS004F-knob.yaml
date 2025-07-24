@@ -103,15 +103,11 @@ action:
       speed: "{% if trigger.event.data.args[2] == 1 %} 0.5 {% else %} 0 {% endif %}"
 
   - choose:
-
-    # Command Mode
     - conditions:
         - "{{ command == 'toggle' }}"
         - "{{ cluster_id == 6 }}"
         - "{{ endpoint_id == 1 }}"
       sequence: !input toggle
-
-    # Command Mode: Dimming
     - conditions:
         - "{{ command == 'step' }}"
         - "{{ cluster_id == 8 }}"
