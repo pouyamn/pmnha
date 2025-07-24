@@ -42,7 +42,6 @@ blueprint:
       selector:
         device:
           integration: zha
-          manufacturer: _TZ3000_402vrq2i
           model: TS004F
     light:
       name: Light (Command/Dimmer mode)
